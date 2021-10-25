@@ -1,0 +1,26 @@
+
+.contact {
+  background: #f4f4f4;
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.contact h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+button{
+  display: inline-block;
+  background: red ;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+  margin-left: 300px;
+  padding: 1px 10px 3px 10px;
+}
