@@ -1,7 +1,6 @@
 <div class="wrap">
   <div class="search">
-    <input type="text" class="searchTerm" placeholder="Search a contact">
-    <button type="submit" class="searchButton">Search
-    </button>
+    <input type="text" #search id="searchTerm" class="searchTerm" placeholder="Search a contact" (keyup)="onSearch(search.value)">
+    <button type="submit" class="searchButton" (click)="onSearch(search.value)">Search</button>
   </div>
 </div>

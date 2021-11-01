@@ -1,7 +1,9 @@
 <div *ngFor="let contact of contacts" class="contact">
-  <h3>{{contact.number}}
+  <h3>{{contact.phone_number}}
   </h3>
-  <button>Delete</button>
-  <p>{{contact.name}}</p>
+  <button (click)="onDelete(contact)">Delete</button>
+  <p>{{contact.first_name}} {{contact.last_name}}</p>
+  <p>{{contact.designation}}</p>
+
 </div>
 

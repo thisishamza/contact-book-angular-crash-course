@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {ContactService} from '../../services/contact.service'
+import {Contact} from "../../Contacts";
 
 @Component({
   selector: 'app-search',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchComponent implements OnInit {
 
-  constructor() { }
+  @Input() contact: Contact;
+  private contacts: Contact[];
 
-  ngOnInit(): void {
+  constructor(private contactService: ContactService) {
   }
 
+  ngOnInit(): void {}
+
+  onSearch(search_term: string) {
+
+  }
 }
